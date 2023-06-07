@@ -1,0 +1,67 @@
+<html>
+	<head>
+	
+	<style>
+			table,td,th
+			{
+				border:1px solid red;
+			}
+			
+	</style>
+	
+			<script>
+					function display()
+					{
+							alert("hello");
+
+							var table=document.getElementById("table1");
+							table.innerHTML="";
+
+							var headingrow=document.createElement("tr");
+
+							var rnoth=document.createElement("th");
+							var marksth=document.createElement("th");
+		
+							var heading1=document.createTextNode("rno");
+							var heading2=document.createTextNode("marks");
+		
+							rnoth.appendChild(heading1);
+							marksth.appendChild(heading2);
+							
+							headingrow.appendChild(rnoth);
+							headingrow.appendChild(marksth);
+							
+							table.appendChild(headingrow);
+
+							var row=document.createElement("tr");
+							
+							
+							var rnotd=document.createElement("td");
+							var markstd=document.createElement("td");
+		
+							var rno=document.createTextNode("1");
+							var marks=document.createTextNode("90");
+		
+							rnotd.appendChild(rno);
+							markstd.appendChild(marks);
+
+							row.appendChild(rnotd);
+							row.appendChild(markstd);
+							
+							table.appendChild(row);
+					}
+		</script>
+			
+	</head>
+
+	<body>
+			<input type="button" value="all" onclick="display()">
+			
+			<table id="table1">
+				
+			</table>
+			
+	</body>
+
+			
+</html>
